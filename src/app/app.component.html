@@ -7,7 +7,7 @@
         <!-- default event binding  -->
       <br><br>
       <ul class="list-group">
-        <!-- // Can't have multiple template bindings on one element: if i give another directive it will show an error -->
+        <!-- Can't have multiple template bindings on one element: if i give another directive it will show an error -->
         <!-- * indicates angular this is a structural directive -->
         <div *ngIf="onlyOdd">
           <li
@@ -18,12 +18,12 @@
           {{ odd }}
         </li>
 
-        <!-- ngStyle : set style attibute of HTML element -->
+        <!-- ngStyle : set style attibute of HTML element (add or remove) -->
         </div>
         <!-- ngIf: structure directive, add or remove html element based of expression value -->
         <div *ngIf="!onlyOdd">
           <!-- ngClass: bind css class -->
-          <!-- *ngFor:attribute directive, iterate over loop and object -->
+          <!-- *ngFor:structure directive, iterate over loop and object -->
             <li
             class="list-group-item"
             [ngClass]="{even: even % 2 !==1}" 

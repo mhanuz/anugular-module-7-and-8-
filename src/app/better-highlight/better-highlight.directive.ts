@@ -4,6 +4,7 @@ import { Directive, Renderer2, OnInit, ElementRef, HostListener, HostBinding, In
   selector: '[appBetterHighlight]'
 })
 export class BetterHighlightDirective implements OnInit{
+  // input decorator allow child component to access the values from parent component and assgin the value into child component property
   @Input() defaultColor: string = "transparent";
   @Input() highlightColor: string = "blue";
 
